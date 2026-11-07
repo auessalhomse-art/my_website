@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>صفحة الفعاليات</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<div class="brand">
+<img src="imag/SVUlogo.png" alt="شعار الجامعة الافتراضية السورية" class="logo">
+<h1>دليل فعاليات الجامعة الافتراضية السورية</h1>
+</div>
+<nav>
+<p><a href="index.html">للذهاب لصفحة دليل فعاليات الجامعة اضغط هنا</a></p>
+<p><a href="events.html">للذهاب لصفحة الفعاليات اضغط هنا</a></p>
+<p><a href="event.html">للذهاب لصفحة تفاصيل فعالية واحدة اضغط هنا</a></p>
+<p><a href="about.html">للذهاب لصفحة عن الدليل اضغط هنا</a></p>
+<p><a href="contact.html">للذهاب لصفحة اتصل بنا اضغط هنا</a></p>
+</nav>
+</div>
+</header>
+<main class="container">
+    <img id="slide" src="imag/mps.jpg" style="width: 100% ; height: 400px; object-fit: cover;"/>
+    <button style="padding: 10px 30px; font-size: 18px ; margin: 5px;" onclick="backimg()"><b>السابق</b></button>
+    <button style="padding: 10px 30px; font-size: 18px ; margin: 5px;" onclick="nextimg()"><b>التالي</b></button>
+<form action="" class="panel filter-form">
+<div class="row">
+<div class="col-12 col-md-6 col-lg-3">
+<input type="text" id="q" name="TEXT" maxlength="15">
+</div>
+<div class="col-12 col-md-6 col-lg-3">
+<select id="fil" name="fil">
+<option>الكل</option>
+<option>ثقافة</option>
+<option>رياضة</option>
+<option>برمجة</option>
+<option>ورشات العمل</option>
+<option>عائلي</option>
+</select>
+</div>
+<div class="col-12 col-md-6 col-lg-3">
+<select id="place" name="filplace">
+<option>الكل</option>
+<option>أونلاين عبر اللانترنت</option>
+<option>دمشق</option>
+<option>حلب</option>
+<option>غيرها</option>
+</select>
+</div>
+<div class="col-12 col-md-6 col-lg-3">
+<input type="date" id="dn" name="dn">
+</div>
+<div class="col-12">
+<input type="submit" value="Search" class="btn">
+</div>
+</div>
+</form>
+
+<section class="row">
+<div class="col-12 col-md-6 col-lg-4">
+<article class="event-card">
+<h2>مسابقة برمجية للطلاب</h2>
+<img src="imag/mps.jpg" alt="تعذر التحميل" width="250" height="250">
+<ol><li>التاريخ: 13/11/2026</li><li>المكان: بناء الجامعة الافتراضية السورية</li><li>مدة المسابقة ثلاث ساعات</li><li>التصنيف: برمجة</li></ol>
+<p class="more">لمعرفة تفاصيل أكثر عن الفعالية <a href="event.html">اضغط هنا</a></p>
+</article>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+<article class="event-card">
+<h2>حفل تخرج طلاب الجامعة الافتراضية السورية</h2>
+<img src="imag/obera3.jpg" alt="تعذر التحميل" width="250" height="250">
+<ol><li>التاريخ: 6/6/2027</li><li>مدة الحفل أربع ساعات</li><li>المكان: دار الأوبرا في دمشق</li><li>احتفال بتخرج طلاب الجامعة</li><li>التصنيف: عائلي</li></ol>
+<p class="more">لمعرفة تفاصيل أكثر عن الفعالية <a href="event.html">اضغط هنا</a></p>
+</article>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+<article class="event-card">
+<h2>معرض مشاريع التخرج لكلية الهندسة المعلوماتية</h2>
+<img src="imag/mti.jpg" alt="تعذر التحميل" width="250" height="250">
+<ol><li>التاريخ: 28/2/2027</li><li>المكان: بناء الجامعة الافتراضية السورية</li><li>مدة المعرض ثلاث ساعات ونصف</li><li>يقوم المعرض على عرض مشاريع للطلاب و مناقشتها و تقديم ملاحظات لكتابة أكثر صحة</li><li>التصنيف: ثقافة</li></ol>
+<p class="more">لمعرفة تفاصيل أكثر عن الفعالية <a href="event.html">اضغط هنا</a></p>
+</article>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+<article class="event-card">
+<h2>ورشة عمل (أونلاين): مهارات العمل الحر للمبرمجين</h2>
+<img src="imag/wwo.jpg" alt="تعذر التحميل" width="250" height="250">
+<ol><li>التاريخ: 12/5/2027</li><li>المكان: بناء الجامعة الافتراضية السورية</li><li>مدة الورشة أريع ساعات و نصف</li><li>ندوة تعريفية بالأشياء الأساسية التي تلزم الطالب بعد التخرج</li><li>التصنيف: ورشة العمل</li></ol>
+<p class="more">لمعرفة تفاصيل أكثر عن الفعالية <a href="event.html">اضغط هنا</a></p>
+</article>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<p>2026 &copy; جميع الحقوق محفوظة - فريق الجامعة الافتراضية السورية</p>
+<p>للتواصل معنا عن طريق الايميل التالي info@svuonline.org</a></p>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
